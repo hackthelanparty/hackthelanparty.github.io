@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hack the LAN Party</title>
+	<style type="text/css">
+		body{font-family:courier new,monospace;color:#0f8;margin:30px;background:#111 radial-gradient(#000,#111) no-repeat center center;font-size:13px;height:100vh}a{color:inherit;text-decoration:underline}#t{white-space:pre-wrap;line-height:1.4}#x{display:inline-block;height:1.35em;width:.7em;vertical-align:middle;background-color:#fff}.transparent{opacity:0}
+	</style>
+	<script type="text/javascript">
+		var s,t,x,p,d;t=$("#t"),x=$("#x"),p=0,d=3,$("html").on("keydown",function(s){(p+=d)>s.length+d-s.length%d&&(p=0),t.html(t.html()+s.slice(p-d,p)),x.removeClass("transparent"),line.css({top:x.offset().top}),window.scrollTo(0,document.body.scrollHeight)}),setInterval(function(){x.toggleClass("transparent")},600);
+	</script>
+</head>
+<body>
+<span id=t>/* Hack the LAN Party! */</span><div id=x></div>
+</body>
+</html>
